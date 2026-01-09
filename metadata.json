@@ -1,0 +1,7 @@
+{
+  "name": "Squat Climber",
+  "description": "A motion-controlled game where you climb a tree by performing squats. Powered by MediaPipe for motion capture and Gemini for coaching.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

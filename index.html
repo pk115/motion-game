@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>MOTION ARCADE</title>
+    <link rel="icon" type="image/png" href="/images/logouncledevmini.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background-color: #0f172a;
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+        min-height: 100vh;
+        min-height: 100dvh; /* Dynamic viewport height for mobile */
+      }
+      
+      /* Safe area support for iPhone notch */
+      :root {
+        --safe-area-top: env(safe-area-inset-top, 0px);
+        --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+        --safe-area-left: env(safe-area-inset-left, 0px);
+        --safe-area-right: env(safe-area-inset-right, 0px);
+      }
+      
+      /* Root container - allow overflow for menu pages */
+      html {
+        height: 100%;
+        overflow-x: hidden;
+      }
+      body {
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+      #root {
+        min-height: 100%;
+        min-height: 100dvh;
+      }
+      
+      /* Game screen - lock scrolling */
+      .game-screen {
+        position: fixed !important;
+        inset: 0 !important;
+        overflow: hidden !important;
+      }
+      
+      /* Scrollable page */
+      .scrollable-page {
+        min-height: 100vh;
+        min-height: 100dvh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      /* Custom scrollbar styling */
+      .scrollable-page::-webkit-scrollbar {
+        width: 4px;
+      }
+      .scrollable-page::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .scrollable-page::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.2);
+        border-radius: 2px;
+      }
+      
+      /* Hide scrollbar option */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      
+      /* Mobile camera portrait mode */
+      .camera-portrait {
+        aspect-ratio: 9/16 !important;
+      }
+      .camera-landscape {
+        aspect-ratio: 16/9 !important;
+      }
+      
+      /* Mobile optimization */
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+        /* Prevent double-tap zoom */
+        button, a {
+          touch-action: manipulation;
+        }
+      }
+      
+      /* Small mobile screens */
+      @media (max-width: 380px) {
+        body {
+          font-size: 12px;
+        }
+      }
+      
+      /* Landscape mobile */
+      @media (max-height: 500px) and (orientation: landscape) {
+        .hide-landscape-mobile {
+          display: none !important;
+        }
+      }
+      
+      /* Touch-friendly spacing */
+      @media (hover: none) and (pointer: coarse) {
+        .touch-spacing {
+          padding: 16px !important;
+          gap: 16px !important;
+        }
+      }
+      
+      /* Smooth animations */
+      @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "react-webcam": "https://aistudiocdn.com/react-webcam@^7.2.0",
+    "@mediapipe/tasks-vision": "https://aistudiocdn.com/@mediapipe/tasks-vision@^0.10.22-rc.20250304"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
