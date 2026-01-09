@@ -11,7 +11,19 @@ _Get fit while having fun with real-time squat tracking and AI coaching!_
 [![Firebase](https://img.shields.io/badge/Firebase-12.6-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![Gemini AI](https://img.shields.io/badge/Gemini-AI-8E75B2?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
 
-[Features](#-features) • [Demo](#-demo) • [Quick Start](#-quick-start) • [Setup](#️-setup-guide) • [Tech Stack](#-tech-stack)
+[Features](#-features) • [Demo](#-demo) • [Quick Start](#-quick-start) • [Setup](#️-setup-guide) • [Tech Stack](#-tech-stack) • [Support](#-support)
+
+---
+
+<div align="center">
+
+**🔗 Connect with me:**
+
+[![Linktree](https://img.shields.io/badge/Linktree-43E55E?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/sleepeye)
+[![TikTok](https://img.shields.io/badge/TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white)](https://www.tiktok.com/@sleepeye6)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=61575906773216)
+
+</div>
 
 </div>
 
@@ -83,8 +95,8 @@ _Get fit while having fun with real-time squat tracking and AI coaching!_
 
 ```bash
 # 1. Clone this repository
-git clone https://github.com/your-username/squat-game.git
-cd squat-game
+git clone https://github.com/pk115/motion-game.git
+cd motion-game
 
 # 2. Install dependencies
 npm install
@@ -351,9 +363,10 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 Having issues? Got questions?
 
-- 📧 **Email:** your-email@example.com
-- 💬 **Discord:** [Join our community](#)
-- 🐛 **Issues:** [Report bugs here](https://github.com/your-username/squat-game/issues)
+- 🔗 **All Links:** [linktr.ee/sleepeye](https://linktr.ee/sleepeye)
+- 🎵 **TikTok:** [@sleepeye6](https://www.tiktok.com/@sleepeye6)
+- 👥 **Facebook:** [SleepEye](https://www.facebook.com/profile.php?id=61575906773216)
+- 🐛 **Issues:** [Report bugs here](https://github.com/pk115/motion-game/issues)
 
 ---
 
@@ -361,7 +374,7 @@ Having issues? Got questions?
 
 ### ⭐ If you find this project useful, please consider giving it a star!
 
-**Made with ❤️ and 🏋️ by [Your Name]**
+**Made with ❤️ and 🏋️ by [SleepEye](https://linktr.ee/sleepeye)**
 
 [⬆ Back to Top](#-squat-game)
 
